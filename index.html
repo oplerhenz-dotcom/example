@@ -9,8 +9,25 @@
     background-color: grey;
     margin:auto;
     max-width: 60em;
-    height:35em;
+    height:40em;
     border-radius:1em;
+    }
+    nav{
+        position:fixed;
+        top:-15px;
+    }
+    ul{
+        display:flex;
+        background-color: rgba(0, 0, 0, 0.842);
+         width:58rem; 
+        padding:auto;
+        border-radius: 20px;
+        
+    }
+    li{
+        list-style: none;
+        padding:1rem;
+        font-weight:bold;
     }
     section > header{
         padding:1em;
@@ -22,7 +39,7 @@
         padding:1em;
         box-shadow:0px 0px 20px 10px rgb(37, 32, 32);
     }
-    details >p , summary{
+    details > p , summary{
     background-color: rgba(0, 0, 0, 0.342);
     
     margin:0;
@@ -33,19 +50,34 @@
         color:white;
     }
     footer > header{
+
         text-align: center;
     }
     @media only screen and (max-width: 600px) {
   /* For mobile phones: */
-  .section, .article, .footer{
+ .section, .article, .footer{
     width: 100%;
   }
   footer > p{
   width:50vw;
   }
   main{
-  height:180vw;
+  height:140vw;
   }
+  footer > header{
+        padding-top:1vw;
+        text-align: center;
+  }
+  nav > ul, li{
+    justify-content:center;
+    
+  }
+  ul{
+        display:flex;
+        background-color: rgba(0, 0, 0, 0.842);
+         width:58rem; 
+        padding:auto;
+        border-radius: 20px;
 }
 
 
@@ -54,6 +86,13 @@
 </head>
 <body>
     <main>
+        <nav>
+            <ul>
+                <li><a href="#contact">Contact</li></a>
+                <li><a href="">HTML</li></a>
+                <li><a href="">BAYOT</li></a>
+            </ul>
+        </nav>
         <section>
             <header>
                 <h1>This is a example of what I have learned. </h1>
@@ -76,9 +115,15 @@
                 </details>
             </section>
         </article>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <footer>
             <header>
-            <h2>Contact me here</h2>
+            <h2 id="contact">Contact me here</h2>
             </header>
            <p>Facebook:<a href="facebook.com">Rhenz John Ople</p></a>
         </footer>
